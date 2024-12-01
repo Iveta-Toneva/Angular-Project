@@ -161,6 +161,62 @@
         },
         "furniture": {},
         "orders": {},
+        "caricatures": {
+            "1": {
+                "_ownerId": "1",
+                "_id": "1",
+                "title": "Cartoon from your Photo",
+                "price": "35 £",
+                "description": "Are you looking for a perfect Cyclist Gift? Do you want an amazing Cyclist Caricature? Well, I might have the perfect solution to your problem! Please send me a quality photo or several photos via Etsy message. You will receive a digital file with a cartoon portrait. No physical delivery is offered. Please feel free to contact me if you have any questions.Thanks for your purchase!",
+                "img": "https://i.etsystatic.com/26137426/r/il/d6010c/3729916674/il_1588xN.3729916674_1xeh.jpg",
+                "likes": 0
+            },
+            "2": {
+                "_ownerId": "1",
+                "_id": "2",
+                "title": "Funny Superhero Pet Portrait",
+                "price": "15 £",
+                "description": "Hi there! Are you looking for a perfect Pet Gift? Do you want an amazing Superhero Pet Portrait? Well, I might have the perfect solution to your problem! I will draw a custom Pet Portrait of the pet from your photo. This is olso the original Gift for every occasion. Custom Pet Portrait like Superhero :) Please make the order and send me a good photo(the better the photo the better the drawing,the pet is not blurry and no part of the head or shoulders are covered by any object) or several photos via Etsy message to get started. Please! Feel free to contact me if you have any questions .Thanks for your purchase!",
+                "img": "https://i.etsystatic.com/26137426/r/il/4b7722/2984884593/il_1588xN.2984884593_9579.jpg",
+                "likes": 0
+            },
+            "3": {
+                "_ownerId": "1",
+                "_id": "3",
+                "title": "Funny custom caricature hairdresser",
+                "price": "30 £",
+                "description": "Are you looking for a perfect Hairdresser Gift? Do you want an amazing Hairdresser Caricature?  Well, I might have the perfect solution to your problem! Please send me a quality photo or several photos via Etsy message. You will receive a digital file with a cartoon portrait. No physical delivery is offered. Please feel free to contact me if you have any questions. Thanks for your purchase!",
+                "img": "https://i.etsystatic.com/26137426/r/il/d5d1b5/6458825786/il_1588xN.6458825786_8ezq.jpg",
+                "likes": 0
+            },
+            "4": {
+                "_ownerId": "1",
+                "_id": "4",
+                "title": "Funny Fitness Girl Gift",
+                "price": "30 £",
+                "description": "Are you looking for a perfect Gift? Do you want an amazing Caricature? Well, I might have the perfect solution to your problem! Please send me a quality photo or several photos via Etsy message. You will receive a digital file with a cartoon portrait. No physical delivery is offered. Please feel free to contact me if you have any questions.Thanks for your purchase!",
+                "img": "https://i.etsystatic.com/26137426/r/il/ef3cf0/6506975773/il_1588xN.6506975773_ogdp.jpg",
+                "likes": 0
+            },
+            "5": {
+                "_ownerId": "1",
+                "_id": "5",
+                "title": "Custom pop art portrait",
+                "price": "15 £",
+                "description": "Are you looking for a perfect Portrait Gift? Do you want an amazing Custom Portrait? Well, I might have the perfect solution to your problem! I will draw a Custom Portrait from your photo. Please send me a quality photo or several photos via Etsy message.(Please do not send me low quality photos.You will receive a digital file with your Portrait. No physical delivery is offered. Please feel free to contact me if you have any questions. Thanks for your purchase!",
+                "img": "https://i.etsystatic.com/26137426/r/il/2d60ea/3160061595/il_1588xN.3160061595_p597.jpg",
+                "likes": 0
+            },
+            "6": {
+                "_ownerId": "1",
+                "_id": "6",
+                "title": "Custom Line Art",
+                "price": "15 £",
+                "description": "Are you looking for a perfect Line Art Gift? Do you want an amazing Custom Line Art? Well, I might have the perfect solution to your problem! I will draw a Custom Line Art from your photo. Please send me a quality photo or several photos via Etsy message.(Please do not send me low quality photos. You will receive a digital file with your Line Art. No physical delivery is offered. Please feel free to contact me if you have any questions. Thanks for your purchase!",
+                "img": "https://i.etsystatic.com/26137426/r/il/3ce740/3294977861/il_1588xN.3294977861_nz0n.jpg",
+                "likes": 0
+            }
+        },
         "movies": {
             "1240549d-f0e0-497e-ab99-eb8f703713d7": {
                 "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",

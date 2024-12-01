@@ -1,0 +1,13 @@
+<div class="items-container">
+    @for (item of catalouge; track $index) {
+    <div class="item-container">
+        <div class="title">{{item.title}}</div>
+        <div>
+            <img src="{{item.img}}">
+        </div>
+        <div class="button">
+            <a href="">Details</a>
+        </div>
+    </div>
+    }
+</div>
