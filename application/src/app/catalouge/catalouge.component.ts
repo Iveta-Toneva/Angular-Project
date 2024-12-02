@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CaricaturesService } from '../services/caricatures.service';
-import { Catalouge } from './catalouge';
+import { Caricature } from './caricature';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-catalouge',
@@ -10,11 +11,16 @@ import { Catalouge } from './catalouge';
 })
 export class CatalougeComponent implements OnInit {
 
-  catalouge: Catalouge[] | null = null;
-  constructor(private caricatureService: CaricaturesService) { }
+  catalouge: Caricature[] | null = null;
+  constructor(private caricatureService: CaricaturesService, private router: Router) { }
   ngOnInit(): void {
     this.caricatureService.getCaricatures().subscribe(data => {
       this.catalouge = data;
+    })
+  }
+  loadDetails(id: string): void {
+    this.caricatureService.getSingleCaricature(id).subscribe(caricature => {
+      this.router.navigate(['/catalouge/', id]);
     })
   }
 }

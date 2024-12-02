@@ -1,4 +1,4 @@
-export interface Catalouge {
+export interface Caricature {
     description: string,
     _id: string,
     likes: string,

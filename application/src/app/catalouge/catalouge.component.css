@@ -42,11 +42,13 @@
 
 .button a{
     text-decoration: none;
-    padding: 1em 1em;
+    padding: 0.5em 1em;
     background-color: wheat;
-    border-radius: 10%;
+    border-radius: 1em;
+    font-size: 1.2em;
 }
 .button a:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+    cursor: pointer;
 }
