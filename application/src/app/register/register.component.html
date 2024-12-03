@@ -1,0 +1,57 @@
+<div class="wrapper">
+    <div class="content">
+        <h2>Register</h2>
+        <div class="form">
+            <form [formGroup]="form" (ngSubmit)="registerHandler()">
+                <label for="email">Email: </label>
+                <input type="text" id="email" formControlName="email" />
+                @if (form.get('email')?.touched) {
+                <div>
+                    @if (form.get('email')?.errors?.['required']) {
+                    <p class="error">Email is required!</p>
+                    }
+                    @if (form.get('email')?.errors?.['pattern']) {
+                    <p class="error">The email should be valid!</p>
+                    }
+                </div>
+                }
+                <label for="username">Username: </label>
+                <input type="text" id="username" formControlName="username" />
+                @if (form.get('username')?.touched) {
+                <div>
+                    @if (form.get('username')?.errors?.['required']) {
+                    <p class="error">Username is required!</p>
+                    }
+                    @if (form.get('username')?.errors?.['minlength']) {
+                    <p class="error">The username should be at least 5 characters!</p>
+                    }
+                </div>
+                }
+                <label for="password">Password: </label>
+                <input type="password" id="password" formControlName="password" />
+                @if (form.get('password')?.touched) {
+                <div>
+                    @if (form.get('password')?.errors?.['required']) {
+                    <p class="error">Password is required!</p>
+                    }
+                    @if (form.get('password')?.errors?.['minlength']) {
+                    <p class="error">Password should be at least 6 characters!</p>
+                    }
+                </div>
+                }
+                <label for="repeatPassword">Repeat password: </label>
+                <input type="password" id="repeatPassword" formControlName="repeatPassword" />
+                @if (form.get('repeatPassword')?.touched) {
+                <div>
+                    @if
+                    (form.get('repeatPassword')?.errors?.['required']||form.get('repeatPassword')?.value!==form.get('password')?.value)
+                    {
+                    <p class="error">Passwords don't match!</p>
+                    }
+                </div>
+                }
+                <button class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+</div>

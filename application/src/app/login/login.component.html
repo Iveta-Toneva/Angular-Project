@@ -8,7 +8,7 @@
                 @if (form.get('email')?.touched) {
                 <div>
                     @if (form.get('email')?.errors?.['required']) {
-                    <p class="error">Email is required</p>
+                    <p class="error">Email is required!</p>
                     }
                     @if (form.get('email')?.errors?.['pattern']) {
                     <p class="error">The email should be valid!</p>
@@ -20,10 +20,7 @@
                 @if (form.get('password')?.touched) {
                 <div>
                     @if (form.get('password')?.errors?.['required']) {
-                    <p class="error">Password is required</p>
-                    }
-                    @if (form.get('password')?.errors?.['minlength']) {
-                    <p class="error">The password should be at least 5 characters!</p>
+                    <p class="error">Password is required!</p>
                     }
                 </div>
                 }

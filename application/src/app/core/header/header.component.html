@@ -1,7 +1,10 @@
 <div class="navigation">
     <a routerLink="/home">Home</a>
     <a routerLink="/catalouge">Catalouge</a>
+    @if(isLogged){
+    <a (click)="logout()">Logout</a>
+    }@else {
     <a routerLink="/login">Login</a>
-    <a href="">Register</a>
-    <a href="">Logout</a>
+    <a routerLink="/register">Register</a>
+    }
 </div>

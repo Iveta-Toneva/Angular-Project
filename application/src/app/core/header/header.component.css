@@ -4,7 +4,9 @@
     background-color: rgb(66, 66, 97);
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
+
 
 .navigation>* {
     color: white;
@@ -12,3 +14,9 @@
     text-decoration: none;
     font-size: 1.3em;
 }
+
+a:hover {
+    cursor: pointer;
+}
+
+

@@ -10,11 +10,11 @@ export class CaricaturesService {
   constructor(private http: HttpClient) { }
 
   getCaricatures() {
-    return this.http.get<Caricature[]>('http://localhost:3030/data/caricatures');
+    return this.http.get<Caricature[]>('/api/data/caricatures');
   }
 
   getSingleCaricature(id: string) {
-    return this.http.get<Caricature>(`http://localhost:3030/data/caricatures/${id}`);
+    return this.http.get<Caricature>(`/api/data/caricatures/${id}`);
   }
 
 
