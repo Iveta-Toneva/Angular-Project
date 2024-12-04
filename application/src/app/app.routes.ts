@@ -4,6 +4,9 @@ import { CatalougeComponent } from './catalouge/catalouge.component';
 import { DetailsComponent } from './details/details.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { OrderComponent } from './order/order.component';
+import { OrderListComponent } from './order-list/order-list.component';
+
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,5 +18,11 @@ export const routes: Routes = [
         ]
     },
     { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent }
+    { path: 'register', component: RegisterComponent },
+    { path: 'order', component: OrderComponent },
+    { path: 'orderList', component: OrderListComponent }
+
+
+
+
 ];

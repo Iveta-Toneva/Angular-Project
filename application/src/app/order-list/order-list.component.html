@@ -1,0 +1,17 @@
+<div class="wrapper">
+    @for (item of orders; track $index) {
+    <div class="item-container">
+        <div class="title">{{item?.title}}</div>
+        <div class="description"> {{item?.description}}</div>
+        <div class="img">
+            <img src={{item?.img}}>
+        </div>
+        @if(item._ownerId===userId){
+        <div class="buttons">
+            <div class="btn">Edit</div>
+            <div class="btn" (click)="onDelete(item._id)">Delete</div>
+        </div>
+        }
+    </div>
+    }
+</div>

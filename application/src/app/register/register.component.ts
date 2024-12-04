@@ -27,6 +27,7 @@ export class RegisterComponent {
     }
 
     const { email, password, username } = this.form.value;
+
     this.userService.register(email!, username!, password!).subscribe((data) => {
       localStorage.setItem('accessToken', data.accessToken);
       this.router.navigate(['/catalouge']);
