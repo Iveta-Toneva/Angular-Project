@@ -6,4 +6,6 @@ export interface Caricature {
     _ownerId: string,
     price: string,
     img: string
+    username:string
+    _createdOn:string
 }

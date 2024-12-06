@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CaricaturesService } from '../services/caricatures.service';
 import { Router } from '@angular/router';
-import { UserService } from '../services/user.service';
+
 
 @Component({
   selector: 'app-order',
@@ -16,8 +16,9 @@ export class OrderComponent {
 
   form = new FormGroup({
     title: new FormControl('', [Validators.required]),
+    username: new FormControl('', [Validators.required]),
     description: new FormControl('', [Validators.required]),
-    image: new FormControl('', [Validators.required]),
+    img: new FormControl('', [Validators.required]),
   })
 
   price: string = '0';
@@ -28,10 +29,10 @@ export class OrderComponent {
       return;
     }
 
-    const { title, description, image } = this.form.value;
+    const { title, username, description, img} = this.form.value;
 
 
-    this.caricatureService.placeOrder(title!, description!, image!, this.price).subscribe((data) => {
+    this.caricatureService.placeOrder(title!, username!, description!, img!, this.price).subscribe((data) => {
       this.router.navigate(['/orderList']);
     })
 

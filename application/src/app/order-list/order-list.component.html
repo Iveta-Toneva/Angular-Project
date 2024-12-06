@@ -2,13 +2,15 @@
     @for (item of orders; track $index) {
     <div class="item-container">
         <div class="title">{{item?.title}}</div>
+        <div class="username">{{item.username}}</div>
         <div class="description"> {{item?.description}}</div>
         <div class="img">
-            <img src={{item?.img}}>
+            <img src="{{item.img}}">
         </div>
+        <div class="date">Posted on: {{item._createdOn|date:'dd/MM/yyyy'}}</div>
         @if(item._ownerId===userId){
         <div class="buttons">
-            <div class="btn">Edit</div>
+            <div class="btn" (click)="edit(item._id)">Edit</div>
             <div class="btn" (click)="onDelete(item._id)">Delete</div>
         </div>
         }
