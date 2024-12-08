@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
+  errorMessage = '';
   constructor(private userService: UserService, private router: Router) { }
 
   form = new FormGroup({
@@ -26,9 +27,13 @@ export class LoginComponent {
 
     const { email, password } = this.form.value;
 
-    this.userService.login(email!, password!).subscribe((data) => {
-      localStorage.setItem('accessToken', data.accessToken);
-      this.router.navigate(['/catalouge']);
+    this.userService.login(email!, password!).subscribe({
+      next: (user) => {
+        localStorage.setItem('accessToken', user.accessToken);
+        this.router.navigate(['/catalouge']);
+      }, error: (error) => {
+        this.errorMessage = error.error.message;
+      }
     });
 
   }

@@ -62,3 +62,13 @@ label{
     color: red;
     font-style: italic;
 }
+
+.error-toast{
+    background-color: red;
+    position: fixed;
+    left: 70%;
+    padding: 2em;
+    color: white;
+    opacity: 40%;
+
+}

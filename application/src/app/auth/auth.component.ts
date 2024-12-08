@@ -12,6 +12,6 @@ export class AuthComponent implements OnInit {
   constructor(private userService: UserService) { }
   
   ngOnInit(): void {
-    this.userService.getProfile().subscribe(user => { });
+    this.userService.getProfile().subscribe(user => {});
   }
 }

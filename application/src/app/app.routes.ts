@@ -8,6 +8,10 @@ import { OrderComponent } from './order/order.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { EditOrderComponent } from './edit-order/edit-order.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ErrorComponent } from './error/error.component';
+import { userGuard } from './guards/user-guard.guard';
+import { guestGuard } from './guards/guest.guard';
 
 
 export const routes: Routes = [
@@ -19,19 +23,23 @@ export const routes: Routes = [
             { path: ':id', component: DetailsComponent }
         ]
     },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
-    { path: 'order', component: OrderComponent },
-    { path: 'orderList', component: OrderListComponent },
+    { path: 'login', component: LoginComponent, canActivate: [guestGuard] },
+    { path: 'register', component: RegisterComponent, canActivate: [guestGuard] },
+    { path: 'order', component: OrderComponent, canActivate: [userGuard] },
+    { path: 'orderList', component: OrderListComponent, canActivate: [userGuard] },
     {
         path: 'edit', children: [
-            { path: ':id', component: EditOrderComponent }
+            { path: ':id', component: EditOrderComponent, canActivate: [userGuard] }
         ]
     },
     {
         path: 'details', children: [
-            { path: ':id', component: OrderDetailsComponent }
+            { path: ':id', component: OrderDetailsComponent, canActivate: [userGuard] }
         ]
-    }
+    },
+    { path: 'error', component: ErrorComponent },
+    { path: '404', component: NotFoundComponent },
+    { path: '**', redirectTo: '/404', pathMatch: 'full' }
+
 
 ];

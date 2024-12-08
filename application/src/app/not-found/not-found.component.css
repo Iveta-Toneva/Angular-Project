@@ -1,0 +1,18 @@
+div{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+h1{
+    font-size: 3em;
+    color: rgb(15, 15, 15);
+    font-style: italic;
+}
+
+.error{
+    font-size: 12em;
+}
