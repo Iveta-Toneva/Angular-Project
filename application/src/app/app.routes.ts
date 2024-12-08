@@ -12,6 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
 import { userGuard } from './guards/user-guard.guard';
 import { guestGuard } from './guards/guest.guard';
+import { ProfileComponent } from './profile/profile.component';
 
 
 export const routes: Routes = [
@@ -37,6 +38,7 @@ export const routes: Routes = [
             { path: ':id', component: OrderDetailsComponent, canActivate: [userGuard] }
         ]
     },
+    { path: 'profile', component: ProfileComponent, canActivate: [userGuard] },
     { path: 'error', component: ErrorComponent },
     { path: '404', component: NotFoundComponent },
     { path: '**', redirectTo: '/404', pathMatch: 'full' }

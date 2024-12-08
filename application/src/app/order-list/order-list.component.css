@@ -3,17 +3,15 @@
     padding: 2em;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 2em;
 }
 
 .item-container {
     margin: 0 auto;
-    width: 40;
+    width: 40%;
     display: flex;
-    word-break: break-all;
-    flex-direction: column;
     flex-direction: column;
     gap: 1em;
     flex-wrap: wrap;
@@ -25,7 +23,7 @@
 
 .img img {
     max-width: 100%;
-    max-height: 600px;
+    max-height: 500px;
 }
 
 .title {
@@ -33,11 +31,6 @@
     font-size: 2em;
 }
 
-.price {
-    font-style: italic;
-    color: rgb(7, 62, 22);
-    font-size: 1.2em;
-}
 
 .btn {
     padding: 0.5em 1em;
@@ -52,7 +45,21 @@
     color: antiquewhite;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 1em;
+}
+
+.date {
+    font-size: 1.2em;
+}
+
+.username {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.description {
+    font-size: 1.3em;
+    color: grey;
 }
