@@ -32,3 +32,21 @@
     font-size: 1.2em;
 }
 
+.btn {
+    padding: 0.5em 1em;
+    background-color: orange;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: rgb(12, 1, 1);
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.likes{
+    font-size: 1.2em;
+    color: rgb(184, 101, 0);
+}
+

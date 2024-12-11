@@ -7,7 +7,6 @@ import { RegisterComponent } from './register/register.component';
 import { OrderComponent } from './order/order.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { EditOrderComponent } from './edit-order/edit-order.component';
-import { OrderDetailsComponent } from './order-details/order-details.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
 import { userGuard } from './guards/user-guard.guard';
@@ -31,11 +30,6 @@ export const routes: Routes = [
     {
         path: 'edit', children: [
             { path: ':id', component: EditOrderComponent, canActivate: [userGuard] }
-        ]
-    },
-    {
-        path: 'details', children: [
-            { path: ':id', component: OrderDetailsComponent, canActivate: [userGuard] }
         ]
     },
     { path: 'profile', component: ProfileComponent, canActivate: [userGuard] },

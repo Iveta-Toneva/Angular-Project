@@ -6,5 +6,9 @@
             <img src="{{caricature?.img}}">
         </div>
         <div class="price">Price: {{caricature?.price}}</div>
+        @if(isLogged){
+        <div class="btn" (click)="like(caricature?._id!)">Like</div>
+        }
+        <div class="likes">Likes : {{this.likes}}</div>
     </div>
 </div>

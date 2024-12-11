@@ -37,5 +37,12 @@ export class CaricaturesService {
     return this.http.put<Caricature>(`/api/data/customCaricatures/${id}`, { title, username, description, img });
   }
 
+  like(caricaturesId: string) {
+    return this.http.post('/api/data/likes', { caricaturesId });
+  }
+
+  getLikes(id: string) {
+    return this.http.get(`/api/data/likes?where=caricaturesId%3D${id}`);
+  }
 
 }

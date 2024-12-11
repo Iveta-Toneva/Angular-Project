@@ -2,7 +2,7 @@
     @for (item of orders; track $index) {
     <div class="item-container">
         <div class="title">{{item?.title}}</div>
-        <div class="username">{{item.username}}</div>
+        <div class="username">Order from {{item.username}}</div>
         <div class="description"> {{item?.description}}</div>
         <div class="img">
             <img src="{{item.img}}">

@@ -42,7 +42,7 @@ export class EditOrderComponent implements OnInit {
     const { title, username, description, img } = this.form.value;
 
     this.caricatureService.editOrder(this.id, title!, username!, description!, img!).subscribe(() => {
-      this.router.navigate(['/details', this.id]);
+      this.router.navigate(['/orderList']);
     })
 
   }
