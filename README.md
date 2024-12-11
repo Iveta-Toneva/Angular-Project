@@ -36,13 +36,16 @@ All HTML and CSS for this project were written from scratch by me .
 
 Catalouge page:
 
+
 <img width="1708" alt="Screenshot 2024-12-11 at 17 08 22" src="https://github.com/user-attachments/assets/96956cca-af26-435b-bd2c-4948945b9d51" />
 
 Details page:
 
+
 <img width="1650" alt="Screenshot 2024-12-11 at 17 08 54" src="https://github.com/user-attachments/assets/ed584a39-6557-4c9b-b1e5-72c434f3ccf9" />
 
 Orders page:
+
 
 <img width="1693" alt="Screenshot 2024-12-11 at 17 09 10" src="https://github.com/user-attachments/assets/ab6fbec0-4e50-4f35-bfe3-55669070f6a4" />
 
