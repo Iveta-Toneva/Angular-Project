@@ -21,7 +21,7 @@ node index.js
 Once the server is running, you should receive the following message :
 Server started on port 3030. You can make requests to http://localhost:3030/
 
-Overview
+#Overview
 
 The Caricatures SPA is a single-page application (SPA) designed for users to explore, order, and interact with caricatures. Logged-in users can view a catalogue, view detailed information about each caricature, make custom orders, edit and delete their own orders, like caricatures, and they have a profile page. Guests can browse the caricature catalogue and view detailed information about each caricature.
 
@@ -29,4 +29,10 @@ The Caricatures SPA is a single-page application (SPA) designed for users to exp
 The application utilizes route guards to protect specific areas. 
 The application has an Error Handling.
 
-Custom Design: All HTML and CSS for this project were written from scratch by me .
+#Custom Design: 
+All HTML and CSS for this project were written from scratch by me .
+
+#Screenshots
+Catalouge page
+<img width="1708" alt="Screenshot 2024-12-11 at 17 08 22" src="https://github.com/user-attachments/assets/96956cca-af26-435b-bd2c-4948945b9d51" />
+
