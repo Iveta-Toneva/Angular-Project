@@ -23,8 +23,10 @@ Server started on port 3030. You can make requests to http://localhost:3030/
 
 Overview
 
-The Caricatures SPA is a single-page application (SPA) designed for users to explore, order, and interact with caricatures. Logged-in users can view a catalogue, make custom orders, like caricatures, and they have a profile page. Guests can browse the caricature catalogue and view detailed information about each caricature.
+The Caricatures SPA is a single-page application (SPA) designed for users to explore, order, and interact with caricatures. Logged-in users can view a catalogue, view detailed information about each caricature, make custom orders, edit and delete their own orders, like caricatures, and they have a profile page. Guests can browse the caricature catalogue and view detailed information about each caricature.
 
 
+The application utilizes route guards to protect specific areas. 
+The application has an Error Handling.
 
-
+Custom Design: All HTML and CSS for this project were written from scratch by me .
