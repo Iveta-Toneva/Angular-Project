@@ -2,6 +2,8 @@
 
 This project was generated using Angular CLI version 19.0.1 and Softuni-Practice server for the backend.
 
+# How to Run 
+
 To start a local development server go to the application folder, open the terminal and run :
 ```
 npm i
