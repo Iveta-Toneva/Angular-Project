@@ -32,7 +32,7 @@ The application utilizes route guards to protect specific areas. The guests can'
 
 
 # Custom Design: 
-All HTML and CSS for this project were written from scratch by me .
+All HTML and CSS for this project were written from scratch by me.
 
 # Screenshots
 
