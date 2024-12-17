@@ -6,7 +6,7 @@ This project was generated using Angular CLI version 19.0.1 and Softuni-Practice
 
 To start a local development server go to the application folder, open the terminal and run :
 ```
-npm i
+npm install
 ng serve
 ```
  Once the server is running, open your browser and navigate to http://localhost:4200/
