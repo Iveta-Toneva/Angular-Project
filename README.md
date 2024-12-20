@@ -12,7 +12,7 @@ ng serve
  Once the server is running, open your browser and navigate to http://localhost:4200/
 
 
-To build the Softuni-Practice server,go to the server folder and run the following commands in the terminal:
+To build the Softuni-Practice server, go to the server folder and run the following commands in the terminal:
 ```
 npm install
 npm run client
