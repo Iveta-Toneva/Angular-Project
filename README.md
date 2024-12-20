@@ -6,7 +6,7 @@ This project was generated using Angular CLI version 19.0.1 and Softuni-Practice
 
 To start a local development server go to the application folder, open the terminal and run :
 ```
-npm i
+npm install
 ng serve
 ```
  Once the server is running, open your browser and navigate to http://localhost:4200/
@@ -28,11 +28,11 @@ Server started on port 3030. You can make requests to http://localhost:3030/
 The Caricatures SPA is a single-page application (SPA) designed for users to explore, order, and interact with caricatures. Logged-in users can view a catalogue, view detailed information about each caricature, make custom orders, edit and delete their own orders, like caricatures, and they have a profile page. Guests can browse the caricature catalogue and view detailed information about each caricature.
 
 # Security
-The application utilizes route guards to protect specific areas. The guests can't reach order's page, add order's page, profile page, edit page. The logged in users can't reach the login and register pages.
+The application utilizes route guards to protect specific areas. The guests can't reach order's page, add order's page, profile page, edit page. The logged in users can't reach the login and register pages. There is an error handling.
 
 
 # Custom Design: 
-All HTML and CSS for this project were written from scratch by me .
+All HTML and CSS for this project were written from scratch by me.
 
 # Screenshots
 
