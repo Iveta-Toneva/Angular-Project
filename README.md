@@ -18,6 +18,7 @@ npm install
 npm run client
 npm run build
 node index.js
+
 ```
 
 Once the server is running, you should receive the following message :
