@@ -31,8 +31,6 @@ The Caricatures SPA is a single-page application (SPA) designed for users to exp
 # Security
 The application utilizes route guards to protect specific areas. The guests can't reach order's page, add order's page, profile page, edit page. The logged in users can't reach the login and register pages.
 
-# Error Handling
-
 # Custom Design: 
 All HTML and CSS for this project were written from scratch by me.
 
